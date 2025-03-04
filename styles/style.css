@@ -10,25 +10,6 @@
 
 */
 
-@keyframes scaling-heart {
-  from {
-    scale: 1;
-  }
-  to {
-    scale: 1.25;
-  }
-}
-
-@keyframes sparks-heart {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 .page {
   min-block-size: 100dvb;
   font-family: var(--main-font-family), sans-serif;
@@ -40,12 +21,6 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-}
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--main-font-family), sans-serif;
-  }
 }
 
 .section-width {
@@ -60,9 +35,6 @@
   font-family: var(--accent-font-family), fantasy;
   text-transform: uppercase;
   margin: 100px auto;
-}
-
-.header_wrapper {
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -115,7 +87,7 @@
   position: absolute;
   content: "";
   top: 25px;
-  right: 13px;
+  right: 25px;
   font-family: var(--accent-font-family);
   font-size: 14px;
   text-transform: uppercase;
@@ -146,6 +118,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
+  line-height: 117%;
 }
 
 /*Кнопки и лайки*/
@@ -153,7 +126,6 @@
 .card__buttons {
   display: flex;
   justify-content: end;
-  gap: 12px;
 }
 
 .card__icon-button {
@@ -361,6 +333,7 @@
 
 .like-icon.is-liked .heart {
   animation: scaling-heart 0.3s ease-in 0.1s;
+  transform-origin: center center;
 }
 
 .like-icon.is-liked .sparks {
@@ -372,7 +345,6 @@
 }
 
 @media (width <= 375px) {
-
   .cards-section {
     margin-block-end: 100px;
   }
@@ -381,6 +353,9 @@
     max-block-size: 371px;
   }
 
+  .card__label {
+    right: 13px;
+  }
   .save_btn {
     flex-direction: column;
   }

@@ -1,19 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font-family: 'Inter-Variable';
-    --accent-font-family: 'PressStart2P';
-    --title-weight: 700;
-    --text-weight: 400;
-    --border: 2px solid #000;
-    --bg-color: #fff;
-    --accent-color: #000;
-    --section-width: clamp(23.188rem, 30.892vw + 15.947rem, 43.75rem);
-    --stroke-color: #fff;
-    --label-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    --bg-gradient: 
-    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(255, 255, 255, 0) 2px 4px), 
-    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(255, 255, 255, 0) 2px 4px),
+  --main-font-family: "Inter-Variable";
+  --accent-font-family: "PressStart2P";
+  --title-weight: 700;
+  --text-weight: 400;
+  --border: 2px solid #000;
+  --bg-color: #fff;
+  --accent-color: #000;
+  --section-width: clamp(23.188rem, 30.892vw + 15.947rem, 43.75rem);
+  --stroke-color: #fff;
+  --label-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --bg-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      rgba(255, 255, 255, 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      rgba(255, 255, 255, 0) 2px 4px
+    ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-    --btn-text-color: #fff;
-    --heart-fill: #FF0000;
+  --btn-text-color: #fff;
+  --heart-fill: #ff0000;
 }
